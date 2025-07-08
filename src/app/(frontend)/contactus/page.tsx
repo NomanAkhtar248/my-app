@@ -11,7 +11,7 @@ export default function Page() {
     occupation: '',
     message: ''
   });
-  console.log(formData)
+ 
 
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

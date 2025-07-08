@@ -40,9 +40,13 @@ export default function Page() {
 
       })
       alert('Form submitted successfully!');
-    } catch (e) {
+    } 
+    
+    catch (e) {
       alert('Form submission failed!');
     }
+
+    
   };
 
   

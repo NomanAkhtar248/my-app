@@ -1,4 +1,5 @@
 // collections/Contectus.ts
+
 import { CollectionConfig } from "payload";
 
 export const ContactUs: CollectionConfig = {

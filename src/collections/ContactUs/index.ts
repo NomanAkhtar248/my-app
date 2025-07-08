@@ -1,8 +1,8 @@
 // collections/Contectus.ts
 import { CollectionConfig } from "payload";
 
-export const ContectUs: CollectionConfig = {
-  slug: 'contectus',
+export const ContactUs: CollectionConfig = {
+  slug: 'contactus',
   access: {
     create: () => true, 
   },

@@ -2,7 +2,7 @@
 import { CollectionConfig } from "payload";
 
 export const ContactUs: CollectionConfig = {
-  slug: 'contactUs',
+  slug: 'contactus',
   access: {
     create: () => true, 
   },

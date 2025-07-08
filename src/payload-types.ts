@@ -72,7 +72,7 @@ export interface Config {
     media: Media;
     categories: Category;
     users: User;
-    contactUs: ContactUs;
+    contactus: Contactus;
     redirects: Redirect;
     forms: Form;
     'form-submissions': FormSubmission;
@@ -89,7 +89,7 @@ export interface Config {
     media: MediaSelect<false> | MediaSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
-    contactUs: ContactUsSelect<false> | ContactUsSelect<true>;
+    contactus: ContactusSelect<false> | ContactusSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
@@ -738,9 +738,9 @@ export interface Form {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contactUs".
+ * via the `definition` "contactus".
  */
-export interface ContactUs {
+export interface Contactus {
   id: string;
   name: string;
   phone: string;
@@ -944,8 +944,8 @@ export interface PayloadLockedDocument {
         value: string | User;
       } | null)
     | ({
-        relationTo: 'contactUs';
-        value: string | ContactUs;
+        relationTo: 'contactus';
+        value: string | Contactus;
       } | null)
     | ({
         relationTo: 'redirects';
@@ -1313,9 +1313,9 @@ export interface UsersSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contactUs_select".
+ * via the `definition` "contactus_select".
  */
-export interface ContactUsSelect<T extends boolean = true> {
+export interface ContactusSelect<T extends boolean = true> {
   name?: T;
   phone?: T;
   email?: T;

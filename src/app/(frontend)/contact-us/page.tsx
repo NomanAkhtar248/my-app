@@ -23,7 +23,7 @@ export default function Page() {
 
     try {
       // yahan par mera data bacend say fech hu raha ha 
-      const res = await fetch('http://localhost:3000/api/contactUs', {
+      const res = await fetch('/api/contactus', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
